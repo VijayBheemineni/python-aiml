@@ -47,6 +47,15 @@ uv run jupyter notebook src/
 - Create `src/basics.ipynb`
 - Write code and test locally
 
+### 6. Test Locally
+- Open the '.ipynb' file.
+- In the terminal execute
+```
+# cd notebooks/01_numpy
+uv run which python
+```
+- On top right of jupyter notebook --> 'Select Kernel' --> 'Python Environments' --> Create Python Environment --> Select 'venv' --> and paste above python location. If it doesn't work close the IDE and reopen again.
+
 ### 6. Before committing
 ```bash
 # Clear outputs
@@ -56,6 +65,8 @@ git add .
 git commit -m "Add [package] basics"
 git push
 ```
+
+
 
 ## .gitignore
 Add to repo root:
